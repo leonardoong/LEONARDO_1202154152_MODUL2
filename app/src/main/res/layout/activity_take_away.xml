@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:paddingTop="@dimen/padding_top"
+    android:paddingLeft="@dimen/padding_side"
+    android:paddingRight="@dimen/padding_side"
+    tools:context="com.example.android.leonardo_1202154152_modul2.TakeAwayActivity">
+
+    <TextView
+        android:id="@+id/identitas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Identitas Pemesan:"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top"
+        android:inputType="textCapSentences"
+        android:hint="Nama"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top"
+        android:hint="Phone"
+        android:inputType="phone"/>
+
+    <EditText
+        android:id="@+id/alamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top"
+        android:hint="Alamat"
+        android:inputType="textMultiLine"/>
+
+    <EditText
+        android:id="@+id/catatan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top"
+        android:inputType="textMultiLine"
+        android:hint="Catatan"/>
+
+    <Button
+        android:id="@+id/buttonPesanTake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top"
+        android:text="Pesan"
+        android:textSize="20sp" />
+</LinearLayout>

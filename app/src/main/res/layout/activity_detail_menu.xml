@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/padding_top"
+    android:paddingRight="@dimen/padding_side"
+    android:paddingLeft="@dimen/padding_side"
+    tools:context="com.example.android.leonardo_1202154152_modul2.DetailMenuActivity">
+
+    <TextView
+        android:id="@+id/namaMakanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Nasi Goreng"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/gambar"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="@dimen/padding_top"
+        android:layout_below="@+id/namaMakanan"
+        android:src="@drawable/nasi_goreng" />
+
+    <TextView
+        android:id="@+id/textHarga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_top"
+        android:text="Harga Rp. 15.000"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/gambar"/>
+
+    <TextView
+        android:id="@+id/komposisi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/padding_top"
+        android:layout_below="@+id/textHarga"
+        android:text="Komposisi:" />
+
+    <TextView
+        android:id="@+id/bahan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/komposisi"
+        android:layout_marginTop="@dimen/padding_top"
+        android:text="Nasi, ayam, kecap, garam"/>
+
+
+
+</RelativeLayout>

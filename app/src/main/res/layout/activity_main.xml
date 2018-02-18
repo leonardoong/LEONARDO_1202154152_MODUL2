@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:paddingTop="@dimen/padding_top"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context="com.example.android.leonardo_1202154152_modul2.MainActivity">
+
+    <ImageView
+        android:id="@+id/gambar"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/pilihMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gambar"
+        android:layout_centerHorizontal="true"
+        android:text="Pilih Menu:"
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/pilihMenu"
+        android:gravity="center_horizontal"
+        >
+
+        <RadioButton
+            android:id="@+id/dineIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Dine in"
+            android:onClick="onRadioButtonClick"/>
+
+        <RadioButton
+            android:id="@+id/takeAway"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dineIn"
+            android:text="Take Away"
+            android:onClick="onRadioButtonClick"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/pesan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pesan Sekarang"
+        android:layout_below="@+id/radioGroup"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>
