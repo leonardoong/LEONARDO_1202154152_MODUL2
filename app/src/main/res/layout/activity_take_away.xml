@@ -51,11 +51,27 @@
         android:inputType="textMultiLine"
         android:hint="Catatan"/>
 
+    <EditText
+        android:id="@+id/datePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top"
+        android:onClick="showDatePicker"
+        android:hint="Tanggal"/>
+
+    <EditText
+        android:id="@+id/timePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top"
+        android:onClick="showTimePicker"
+        android:hint="Waktu"/>
+
     <Button
         android:id="@+id/buttonPesanTake"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginTop="10dp"
         android:text="Pesan"
         android:textSize="20sp" />
 </LinearLayout>

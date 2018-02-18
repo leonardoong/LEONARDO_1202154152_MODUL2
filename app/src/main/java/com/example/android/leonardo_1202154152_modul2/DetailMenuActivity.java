@@ -16,6 +16,7 @@ public class DetailMenuActivity extends AppCompatActivity {
     TextView bahan;
     ImageView gambar;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,12 +25,12 @@ public class DetailMenuActivity extends AppCompatActivity {
         harga = (TextView)findViewById(R.id.textHarga);
         bahan = (TextView)findViewById(R.id.bahan);
         gambar = (ImageView)findViewById(R.id.gambar);
-
+        //Untuk meset data yang dikirimkan melalui intent ke dalam layout DetailMenu
         int gambar1 = getIntent().getIntExtra("gambar",1);
-
         nama.setText(getIntent().getStringExtra("nama"));
         harga.setText(getIntent().getStringExtra("harga"));
         gambar.setImageDrawable(getResources().getDrawable(gambar1));
+        bahan.setText(getIntent().getStringExtra("bahan"));
 
     }
 }

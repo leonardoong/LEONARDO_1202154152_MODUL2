@@ -63,7 +63,6 @@
         android:layout_marginTop="@dimen/margin_top"
         android:layout_below="@id/linear"
         android:text="Pilih Pesanan"
-        android:onClick="pesan"
         android:layout_centerHorizontal="true"/>
 
 </RelativeLayout>
